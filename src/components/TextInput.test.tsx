@@ -1,6 +1,6 @@
 import React from "react";
 import { screen, render } from "@testing-library/react";
-import FormInput from "./TextInput";
+import TextInput from "./TextInput";
 
 let mockProps = {
   label: "test-input",
@@ -10,9 +10,9 @@ let mockProps = {
   type: "input",
 };
 
-describe("<FormInput />", () => {
+describe("<TextInput />", () => {
   it('renders a text input with the value "Hello!" and placeholder to be "Textarea input here"', () => {
-    render(<FormInput {...mockProps} />);
+    render(<TextInput {...mockProps} />);
 
     const input: HTMLInputElement = screen.getByRole("textbox", {
       name: /test\-input/i,
@@ -23,7 +23,7 @@ describe("<FormInput />", () => {
   });
 
   it('renders a text input with the value "Good Day" after prop change', () => {
-    render(<FormInput {...mockProps} value="Good Day" />);
+    render(<TextInput {...mockProps} value="Good Day" />);
     const input: HTMLInputElement = screen.getByRole("textbox", {
       name: /test\-input/i,
     });
@@ -33,7 +33,7 @@ describe("<FormInput />", () => {
   });
 
   it('renders the input element when the type prop is "input"', () => {
-    const { container } = render(<FormInput {...mockProps} />);
+    const { container } = render(<TextInput {...mockProps} />);
     const input: HTMLInputElement | HTMLTextAreaElement | null =
       container.querySelector(mockProps.type);
     expect(input).not.toBeNull();
@@ -41,7 +41,7 @@ describe("<FormInput />", () => {
   });
 
   it("renders the correct element when the type prop is changed", () => {
-    const { container } = render(<FormInput {...mockProps} type="textarea" />);
+    const { container } = render(<TextInput {...mockProps} type="textarea" />);
     const input: HTMLInputElement | HTMLTextAreaElement | null =
       container.querySelector("textarea");
     expect(input).not.toBeNull();
