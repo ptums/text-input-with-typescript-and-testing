@@ -6,7 +6,7 @@ A simple site that takes advantage of Typesr
 
 ## Motivation
 
-I recently built a site for a client that uses Typescript and "React Testing Library."  And in this site, I created a component that dynamically generates either an input text element or a textarea element based on the value of a component property. I wanted to share what I've learned from building this component with Typescript and how I used React Testing Library to ensure that the element changed depending on the property. However, since it's a client site, I can't share the source code, so this repo contains a copy of what I wrote for the client.
+I recently built a site for a client that uses Typescript and React Testing Library.  And in this site, I created a component that dynamically generates either a `<input type="text" />` or a `<textarea />` element based the components `type` property. I wanted to share what I've learned from building this component with Typescript and how I used React Testing Library to ensure that the element changed depending on the property. However, since it's a client site, I can't share the source code, so this repo contains a replica of the code only for that component.
 
 Since I found this component so interesting, I was also inspired to write a blog post detailing how I built the component, so here is a link to the post if you would like to learn more about my thoughts behind the component's design and the tests for the component. 
 
