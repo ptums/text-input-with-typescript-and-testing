@@ -1,6 +1,6 @@
 # Typescript with React Testing Library and Jest Demo
 
-A simple site that takes advantage of Typesr 
+A simple site that takes advantage of Typescript with React Testing Library
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
