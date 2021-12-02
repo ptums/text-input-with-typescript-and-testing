@@ -6,7 +6,7 @@ A simple site that takes advantage of Typesr
 
 ## Motivation
 
-I recently built a site for a client that uses Typescript and React Testing Library. And, for this site, I had to create a component that dynamically generates either a `<input type="text" />` or a `<textarea />` element based on the components `type` property.  Developing this component from the perspective of meaningful tests was incredibly challenging and rewarding, so I thought it would publicly share what I built along with the tests and create a companion blog post to provide more of my thoughts behind the component's tests and design. 
+I recently built a site for a client that uses Typescript and React Testing Library. And, for this site, I had to create a component that dynamically generates either a `<input type="text" />` or a `<textarea />` element based on the components `type` property. Developing this component from the perspective of meaningful tests was incredibly challenging and rewarding, so I thought I would share what I built along with the tests and create a companion blog post to provide insight into my thoughts behind the component's tests and design. 
 
 [Wrap your component in battle armor with React Testing Library and Typescript](https://www.tumulty.dev/post/testing-form-inputs-with-react-testing-library-and-typescript)
 
