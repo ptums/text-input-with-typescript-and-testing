@@ -1,6 +1,6 @@
 # Typescript with React Testing Library and Jest Demo
 
-A simple site that takes advantage of Typescript with React Testing Library
+A simple site that demonstrates the power of Typescript and React Testing Library with Jest.
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
