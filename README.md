@@ -20,8 +20,7 @@ If you would like to run the tests or modify the code in anyway feel free! Here 
   cd text-input-with-typescript-and-testing  
   npm install or yarn // preferabbly yarn, since there is a lock file for it
   npm run dev or yarn dev // to run the development server
-  npm test or yarn test to run the tests // to run the jest test runner
-  
+  npm test or yarn test to run the tests // to run the jest test runner  
 ```
 
 
