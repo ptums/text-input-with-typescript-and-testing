@@ -1,24 +1,29 @@
 # Typescript with React Testing Library and Jest Demo
 
-This site is a simple demonstration on how to use ```map()``` and ```forEach()``` methods in javascript. 
+A simple site that takes advantage of Typesr 
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
 ## Motivation
 
-When I first used [React.js](https://reactjs.org), I discovered the javascript method ```map()``` to iterate over data in JSX. Having some previous experience writing functional code in JavaScript I already knew about ```forEach()```.  At first glance, I thought they served the same purpose, but when I tried using ```forEach()``` in JSX it spit out a bunch of errors.
+I recently built a site for a client that uses Typescript and "React Testing Library."  And in this site, I created a component that dynamically generates either an input text element or a textarea element based on the value of a component property. I wanted to share what I've learned from building this component with Typescript and how I used React Testing Library to ensure that the element changed depending on the property. However, since it's a client site, I can't share the source code, so this repo contains a copy of what I wrote for the client.
 
-This set me on a journey to take a deep dive into understanding the nature of these methods. This repository is a collection of my experiments and notes, which I've turned into a [github page](https://ptums.github.io/using-javascript-array-methods/). I also published an article of my discoveries on **Medium.com** [The power of the map method](https://medium.com/@petertumulty/the-power-of-the-map-method-4db6b1a73655).
+Since I found this component so interesting, I was also inspired to write a blog post detailing how I built the component, so here is a link to the post if you would like to learn more about my thoughts behind the component's design and the tests for the component. 
 
-Now, I am looking for recent bootcamp grads, bootcamp students, or any coders who are looking to up their coding skills and learn more about javascript make a fun educational website based on this content. 
+[Wrap your component in battle armor with React Testing Library and Typescript](https://www.tumulty.dev/post/testing-form-inputs-with-react-testing-library-and-typescript)
+
 
 ## Installation
+
+If you would like to run the tests or modify the code in anyway feel free! Here are the installation instructions 
+
 
 ``` 
   git clone https://github.com/ptums/text-input-with-typescript-and-testing.git
   cd text-input-with-typescript-and-testing
   npm install or yarn (preferabbly yarn, since there is a lock file for it)
-  yarn dev 
+  npm run dev or yarn dev  to run the development server
+  npm test or yarn test to run the tests
 ```
 
 
