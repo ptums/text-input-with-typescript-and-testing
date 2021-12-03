@@ -11,15 +11,13 @@ let mockProps = {
 };
 
 describe("<TextInput />", () => {
-  it('renders a text input with the value "Hello!" and placeholder to be "Textarea input here"', () => {
+  it('renders a text input with the value "Hello!"', () => {
     render(<TextInput {...mockProps} />);
-
     const input: HTMLInputElement = screen.getByRole("textbox", {
       name: /test\-input/i,
     });
 
     expect(input.value).toBe(mockProps.value);
-    expect(input.placeholder).toBe(mockProps.placeHolder);
   });
 
   it('renders a text input with the value "Good Day" after prop change', () => {
@@ -40,11 +38,18 @@ describe("<TextInput />", () => {
     expect(container.querySelector('textarea')).toBeNull();
   });
 
-  it("renders the correct element when the type prop is changed", () => {
+  it("renders the correct element when the type prop is changed to textarea", () => {
     const { container } = render(<TextInput {...mockProps} type="textarea" />);
     const input: HTMLInputElement | HTMLTextAreaElement | null =
       container.querySelector("textarea");
     expect(input).not.toBeNull();
     expect(container.querySelector('input')).toBeNull();
+  });
+
+  it("it does not render a text element if a type is neither input nor textarea", () => {
+    const { container } = render(<TextInput {...mockProps} type="paragraph" />);
+    const input: HTMLInputElement | HTMLTextAreaElement | null =
+      container.querySelector("textarea");
+    expect(input).toBeNull();
   });
 });
