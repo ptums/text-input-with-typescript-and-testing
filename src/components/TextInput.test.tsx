@@ -35,7 +35,7 @@ describe("<TextInput />", () => {
     const input: HTMLInputElement | HTMLTextAreaElement | null =
       container.querySelector(mockProps.type);
     expect(input).not.toBeNull();
-    expect(container.querySelector('textarea')).toBeNull();
+    expect(container.querySelector("textarea")).toBeNull();
   });
 
   it("renders the correct element when the type prop is changed to textarea", () => {
@@ -43,7 +43,7 @@ describe("<TextInput />", () => {
     const input: HTMLInputElement | HTMLTextAreaElement | null =
       container.querySelector("textarea");
     expect(input).not.toBeNull();
-    expect(container.querySelector('input')).toBeNull();
+    expect(container.querySelector("input")).toBeNull();
   });
 
   it("it does not render a text element if a type is neither input nor textarea", () => {
